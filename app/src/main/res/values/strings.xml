@@ -1,0 +1,13 @@
+<resources>
+  <string name="app_name">UseD</string>
+  <string name="title_activity_splash">SplashActivity</string>
+  <string name="dummy_button">Dummy Button</string>
+  <string name="dummy_content">DUMMY\nCONTENT</string>
+
+  <string name="title_activity_fullscreen">FullscreenActivity</string>
+  <string-array name="kind_list">
+    <item>Spend</item>
+    <item>Waste</item>
+    <item>Investment</item>
+  </string-array>
+</resources>

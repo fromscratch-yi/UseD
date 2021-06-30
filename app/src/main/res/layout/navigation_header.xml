@@ -1,0 +1,16 @@
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="95dp"
+  android:background="#FFB272">
+
+  <!--アイコン -->
+  <ImageView
+    android:id="@+id/user_icon"
+    android:layout_width="100dp"
+    android:layout_height="35dp"
+    android:background="@drawable/logo"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="15dp"/>
+
+</RelativeLayout>

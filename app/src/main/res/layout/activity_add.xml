@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:padding="16dp"
+  tools:context="com.example.yufroms.used.AddActivity"
+  android:background="@mipmap/bg"
+  android:id="@+id/add_screen">
+  <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="30dp">
+    <ImageButton
+      android:layout_width="30dp"
+      android:layout_height="wrap_content"
+      android:background="@drawable/back_btn"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentLeft="true"
+      android:id="@+id/back_btn"/>
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:text="Add Spending"
+      android:textColor="#fff"
+      android:id="@+id/textView"
+      android:layout_centerVertical="true"
+      android:layout_toEndOf="@+id/back_btn"
+      android:layout_marginStart="20dp"/>
+    <ImageButton
+      android:layout_width="35dp"
+      android:layout_height="wrap_content"
+      android:background="@drawable/check_btn"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentRight="true"
+      android:id="@+id/check_btn"/>
+  </RelativeLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="20dp">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:paddingBottom="10dp"
+      android:text="Date"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:textColor="#ffffff"/>
+
+    <TextView
+      android:id="@+id/input_date"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/border_bottom"
+      android:onClick="showDatePickerDialog"
+      android:padding="10dp"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:textColor="#ffffff"/>
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:paddingBottom="10dp"
+      android:paddingTop="15dp"
+      android:text="Amount"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:textColor="#ffffff"/>
+
+    <LinearLayout
+      android:id="@+id/amount_edit"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_bottom"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="¥"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"/>
+
+      <EditText
+        android:id="@+id/input_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_bottom"
+        android:inputType="number"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"/>
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_bottom"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="-"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"/>
+    </LinearLayout>
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:paddingBottom="10dp"
+      android:paddingTop="15dp"
+      android:text="Kind"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:textColor="#ffffff"/>
+
+    <Spinner
+      android:id="@+id/select_kind"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#32ffffff"
+      android:entries="@array/kind_list"
+      android:padding="10dp"
+      android:spinnerMode="dialog"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:textColor="#ffffff"/>
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:paddingBottom="10dp"
+      android:paddingTop="15dp"
+      android:text="Remarks"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:textColor="#ffffff"/>
+
+    <EditText
+      android:id="@+id/input_remarks"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="#46ffffff"
+      android:gravity="top|left"
+      android:padding="10dp"
+      android:textColor="#ffffff"/>
+  </LinearLayout>
+
+</LinearLayout>
